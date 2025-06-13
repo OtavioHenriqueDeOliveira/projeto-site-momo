@@ -96,19 +96,7 @@ input[type="radio"] {
     background: #333;
 }
 
-.foto {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
 h1 {
-    color: #b30059;
-    margin-bottom: 10px;
-}
-
-h2 {
     margin: 10px 0 5px;
     color: #b30059;
     font-size: 1.2em;
