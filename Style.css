@@ -53,7 +53,8 @@ input[type="radio"] {
 #slide3:checked ~ .slides #s3,
 #slide4:checked ~ .slides #s4,
 #slide5:checked ~ .slides #s5,
-#slide6:checked ~ .slides #s6 {
+#slide6:checked ~ .slides #s6,
+#slide7:checked ~ .slides #s7 {
     opacity: 1;
     position: relative;
 }
@@ -83,7 +84,8 @@ input#slide2:checked ~ .nav label[for="slide2"],
 input#slide3:checked ~ .nav label[for="slide3"],
 input#slide4:checked ~ .nav label[for="slide4"],
 input#slide5:checked ~ .nav label[for="slide5"],
-input#slide6:checked ~ .nav label[for="slide6"] {
+input#slide6:checked ~ .nav label[for="slide6"],
+input#slide7:checked ~ .nav label[for="slide7"] {
     background: #333;
 }
 
