@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    padding-bottom: 0;
     font-family: "Segoe UI", sans-serif;
     background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
     display: flex;
     align-items: center;
-    justify-content: center;
     height: auto;
     min-height: 100vh;
 }
@@ -27,7 +27,9 @@ input[type="radio"] {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .slide {
@@ -36,6 +38,8 @@ input[type="radio"] {
     transition: 0.5s;
     width: 100%;
     text-align: center;
+    top: 0;
+    left: 0;
 }
 
 .slide img {
