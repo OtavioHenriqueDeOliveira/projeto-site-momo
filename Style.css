@@ -43,13 +43,18 @@ input[type="radio"] {
 .slide img {
     width: 100%;
     max-width: 350px;
-    max-height: 450px;
+    /* max-height: 450px; */
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
+    display: block;
+    margin: 0 auto;
 }
 
 .slide h1 {
+    margin: 10px 0 5px;
+    color: #b30059;
+    font-size: 1.2em;
     max-width: 320px;
     text-align: center;
     word-wrap: break-word;
@@ -60,6 +65,8 @@ input[type="radio"] {
     padding: 10px;
     margin: 0;
     font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
     max-width: 320px;
     line-height: 1.4;
     word-wrap: break-word;
@@ -109,16 +116,24 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-h1 {
-    margin: 10px 0 5px;
-    color: #b30059;
-    font-size: 1.2em;
-    max-width: 320px;
-    text-align: center;
-    word-wrap: break-word;
-}
+@media (max-width: 400px) {
 
-p {
-    font-size: 1.1em;
-    color: #333;
+    .carousel {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .slide img {
+        max-width: 90vw;
+    }
+
+    .slide h1,
+    .slide p {
+        max-width: 90vw;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
 }
