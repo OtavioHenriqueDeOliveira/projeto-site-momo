@@ -61,8 +61,10 @@ input[type="radio"] {
 /* Navegação dos botões */
 
 .nav {
-    text-align: center;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
 }
 
 .nav label {
