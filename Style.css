@@ -51,16 +51,14 @@ input[type="radio"] {
 }
 
 /* Exibe o slide correto com base no input selecionado */
-#slide1:checked ~ .slides #s1,
-#slide2:checked ~ .slides #s2,
-#slide3:checked ~ .slides #s3,
-#slide4:checked ~ .slides #s4,
-#slide5:checked ~ .slides #s5,
-#slide6:checked ~ .slides #s6,
-#slide7:checked ~ .slides #s7 {
-    opacity: 1;
-    position: relative;
-    z-index: 1;
+#slide1:checked ~ .slides ~ .nav label[for="slide1"],
+#slide2:checked ~ .slides ~ .nav label[for="slide2"],
+#slide3:checked ~ .slides ~ .nav label[for="slide3"],
+#slide4:checked ~ .slides ~ .nav label[for="slide4"],
+#slide5:checked ~ .slides ~ .nav label[for="slide5"],
+#slide6:checked ~ .slides ~ .nav label[for="slide6"],
+#slide7:checked ~ .slides ~ .nav label[for="slide7"] {
+    background: #333;
 }
 
 /* Navegação dos botões */
