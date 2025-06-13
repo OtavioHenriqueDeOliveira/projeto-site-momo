@@ -16,7 +16,6 @@ body {
 
 .slides {
     display: flex;
-    overflow: hidden;
     width: 100%;
     border-radius: 15px;
 }
@@ -26,6 +25,10 @@ body {
     opacity: 0;
     transition: opacity 0.5s ease;
     text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .slide img {
@@ -44,6 +47,7 @@ input[type="radio"] {
     display: none;
 }
 
+/* Exibe o slide correto com base no input selecionado */
 #slide1:checked ~ .slides #s1,
 #slide2:checked ~ .slides #s2,
 #slide3:checked ~ .slides #s3,
@@ -51,6 +55,14 @@ input[type="radio"] {
 #slide5:checked ~ .slides #s5,
 #slide6:checked ~ .slides #s6 {
     opacity: 1;
+    position: relative;
+}
+
+/* Navegação dos botões */
+
+.nav {
+    text-align: center;
+    margin-top: 10px;
 }
 
 .nav label {
@@ -71,15 +83,6 @@ input#slide4:checked ~ .nav label[for="slide4"],
 input#slide5:checked ~ .nav label[for="slide5"],
 input#slide6:checked ~ .nav label[for="slide6"] {
     background: #333;
-}
-
-.container {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
 }
 
 .foto {
