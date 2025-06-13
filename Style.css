@@ -86,13 +86,13 @@ input[type="radio"] {
     border: 2px solid #999;
 }
 
-#slide1:checked ~ .slides ~ .nav label[for="slide1"],
-#slide2:checked ~ .slides ~ .nav label[for="slide2"],
-#slide3:checked ~ .slides ~ .nav label[for="slide3"],
-#slide4:checked ~ .slides ~ .nav label[for="slide4"],
-#slide5:checked ~ .slides ~ .nav label[for="slide5"],
-#slide6:checked ~ .slides ~ .nav label[for="slide6"],
-#slide7:checked ~ .slides ~ .nav label[for="slide7"] {
+#slide1:checked ~ .nav label[for="slide1"],
+#slide2:checked ~ .nav label[for="slide2"],
+#slide3:checked ~ .nav label[for="slide3"],
+#slide4:checked ~ .nav label[for="slide4"],
+#slide5:checked ~ .nav label[for="slide5"],
+#slide6:checked ~ .nav label[for="slide6"],
+#slide7:checked ~ .nav label[for="slide7"] {
     background: #333;
 }
 
