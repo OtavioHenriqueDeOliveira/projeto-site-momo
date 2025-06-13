@@ -9,6 +9,70 @@ body {
     height: 100vh;
 }
 
+.carousel {
+    width: 350px;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slide {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slide p {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slides #s1,
+#slide2:checked ~ .slides #s2,
+#slide3:checked ~ .slides #s3,
+#slide4:checked ~ .slides #s4,
+#slide5:checked ~ .slides #s5,
+#slide6:checked ~ .slides #s6 {
+    opacity: 1;
+}
+
+.nav label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid #999;
+}
+
+input#slide1:checked ~ .nav label[for="slide1"],
+input#slide2:checked ~ .nav label[for="slide2"],
+input#slide3:checked ~ .nav label[for="slide3"],
+input#slide4:checked ~ .nav label[for="slide4"],
+input#slide5:checked ~ .nav label[for="slide5"],
+input#slide6:checked ~ .nav label[for="slide6"] {
+    background: #333;
+}
+
 .container {
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
